@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        :root {
+            --size: clamp(10rem, 1rem + 40vmin, 30rem);
+            --gap: calc(var(--size) / 14);
+            --duration: 60s;
+            --scroll-start: 0;
+            --scroll-end: calc(-100% - var(--gap));
+        }
+
+        .marquu_container {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 30px;
+        }
+
+        .marquu_box {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 30px;
+            min-width: max-content;
+            animation: scroll-x var(--duration) linear infinite;
+        }
+
+        @keyframes scroll-x {
+            from {
+                transform: translateX(var(--scroll-start));
+            }
+
+            to {
+                transform: translateX(var(--scroll-end));
+            }
+        }
+
+        .marquu_box-y {
+            animation-direction: reverse;
+        }
+
+        .marquu_container-y {
+            padding: 30px 0;
+        }
+
+        .marquu_box img {
+            border-radius: 30px;
+            width: 350px;
+            max-width: 100%;
+            height: 208px;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-animation-container">
+        <div class="marquu_container">
+            <div class="marquu_box">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1486-1.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_4032.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1935.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_4445.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1634.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1932.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1687.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1600.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2064.jpg?v=1734434833">
+            </div>
+            <div class="marquu_box">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_4933.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1486-1.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_4032.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1935.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_4445.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1634.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1932.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1687.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1600.jpg?v=1734434833">
+            </div>
+            <div class="marquu_box">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2064.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_4933.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1486-1.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_4032.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1935.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_4445.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1634.jpg?v=1734434834">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1932.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1687.jpg?v=1734434833">
+            </div>
+        </div>
+
+        <div class="marquu_container-y marquu_container">
+            <div class="marquu_box-y marquu_box">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2233.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1750_f2e89056-c7c6-470d-a625-c74aaeb1c5c5.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1074.jpg?v=1734434832">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2889.jpg?v=1734434832">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_0844.jpg?v=1734434831">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2302.jpg?v=1734434831">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2286.jpg?v=1734434830">
+            </div>
+            <div class="marquu_box-y marquu_box">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2276.jpg?v=1734434829">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/BC109BEC-F7DE-4D38-93F4-06E603F01F13_1_201_a.jpg?v=1734434829">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2233.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1750_f2e89056-c7c6-470d-a625-c74aaeb1c5c5.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1074.jpg?v=1734434832">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2889.jpg?v=1734434832">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_0844.jpg?v=1734434831">
+            </div>
+            <div class="marquu_box-y marquu_box">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2302.jpg?v=1734434831">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2286.jpg?v=1734434830">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2276.jpg?v=1734434829">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/BC109BEC-F7DE-4D38-93F4-06E603F01F13_1_201_a.jpg?v=1734434829">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2233.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1750_f2e89056-c7c6-470d-a625-c74aaeb1c5c5.jpg?v=1734434833">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_1074.jpg?v=1734434832">
+            </div>
+            <div class="marquu_box-y marquu_box">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2889.jpg?v=1734434832">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_0844.jpg?v=1734434831">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2302.jpg?v=1734434831">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2286.jpg?v=1734434830">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2276.jpg?v=1734434829">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/BC109BEC-F7DE-4D38-93F4-06E603F01F13_1_201_a.jpg?v=1734434829">
+                <img width="350px" height="208px"
+                    src="https://cdn.shopify.com/s/files/1/0640/2375/7025/files/IMG_2233.jpg?v=1734434833">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
